@@ -1,50 +1,80 @@
 body {
     background-image: url(wallpaper1.png);
-    background-size: 100%;
-}
-.w {
-    border-radius: 50%;
-}
-.i {
+    background-size: cover;
+    height: 100vh;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     letter-spacing: 1px;
+    min-width: 450px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.card {
     position: absolute;
+    width: 100%;
     top: 50%;
-    left: 50%;
-    margin-left: -175px;
-    margin-top: -175px;
-    text-align: center;
-    background: black;
+    transform: translateY(-50%);
+    min-width: 450px;
+}
+.date {
+    background-color: black;
     border: 1px solid white;
-    color: white;
-    padding: 20px 5px 10px 5px;
-    max-width: 350px;
-    min-width: 350px;
-}
-.p {
-    margin-left: -5px;
-}
-td {
+    width: 350px;
+    height: max-content;
     text-align: center;
+    margin: auto;
+    padding: 20px 0px;
+}
+.logo {
+    border-radius: 100px;
+    width: 150px; 
+    height: 150px;
+}
+.name {
+    font-weight: 600;
+    padding-top: 20px;
+}
+.date ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 10px;
+}
+.date ul li {
+    padding: 10px;
+}
+.two {
+    border-left: 1px solid white;
     border-right: 1px solid white;
-    padding-right: 10px;
-    padding-left: 10px;
 }
-.u {
-    border-right: 1px solid black;
-}
-.q {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -175px;
-    margin-top: 130px;
-    text-align: center;
-    background: black;
+.contacts {
+    background-color: black;
     border: 1px solid white;
-    color: white;
-    padding: 0px 5px 0px 5px;
-    max-width: 350px;
-    min-width: 350px;
-    letter-spacing: 10px;
+    border-top: 0;
+    width: 350px;
+    height: 100px;
+    margin: auto;
+}
+.contacts ul {
+    font-size: 3em;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.contacts ul li {
+    width: 70px;
+    text-align: center;
+    line-height: 100px;
+}
+.contacts li a {
+    color: lightblue;
+}
+@media screen and (max-width: 800px) {
+    body {
+    background-image: url(wallpaper1.png);
+    background-size: auto;
+    }
 }
